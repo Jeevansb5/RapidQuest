@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="resp.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+
+<body>
+
+    <nav id="navbar-rsp">
+        <nav class="navbar, bar">
+            <img id="ser" width="30px" src="searchmagnifierinterfacesymbol1_79893.png" alt="">
+            <a href="#"><img id="home" width="50px" src="—Pngtree—grey house icon free illustration_4738521.png"
+                    alt=""></a>
+            <a href="#"> <img id="blog" width="30px"
+                    src="paper_news_blog_article_newspaper_newsletter_icon_228970.png" alt=""></a>
+            <a href="#"> <img id="listPointer" width="25px" src="1492790974-93list_84195.png" alt=""></a>
+            <a href="#"> <img id="account" width="30px" src="account_avatar_people_profile_user_icon_123297.png"
+                    alt=""></a>
+        </nav>
+    </nav>
+
+    <div class="main">
+        <nav class="nav-rsp">
+            <div class="logo">
+                <img width="30px" src="PngItem_1353738.png" alt="">
+            </div>
+            <nav class="navbar">
+                <img id="srh" width="30px" src="searchmagnifierinterfacesymbol1_79893.png" alt="">
+                <a href="#"><img id="home" width="50px" src="—Pngtree—grey house icon free illustration_4738521.png"
+                        alt=""></a>
+                <a href="#"> <img id="blog" width="30px"
+                        src="paper_news_blog_article_newspaper_newsletter_icon_228970.png" alt=""></a>
+                <a href="#"> <img id="listPointer" width="25px" src="1492790974-93list_84195.png" alt=""></a>
+                <a href="#"> <img id="account" width="30px" src="account_avatar_people_profile_user_icon_123297.png"
+                        alt=""></a>
+            </nav>
+            <div class="logout">
+                <img width="30px" src="3643784-bell-notification-notify-reminder-ring_113451.png" alt="">
+                <img class="out" width="30px" src="logout_90894.png" alt="">
+            </div>
+        </nav>
+        <div id="search" class="v-class">
+            <input type="text" placeholder="search">
+        </div>
+        <section class="transaction">
+            <div class="profile">
+                <img src="profile.jpeg" alt="">
+                <div class="profile-name">
+                    <h1>Hi Mike,</h1>
+                    <p>welcome back.</p>
+                </div>
+            </div>
+            <div class="investment">
+                <h4>Today</h4>
+                <div class="amount">
+                    <h1>$19,892</h1>
+                    <p>Account Balance</p>
+                </div>
+                <div class="amount">
+                    <h4>$4,000</h4>
+                    <p>Year-to-date Contributions</p>
+                </div>
+                <div class="amount">
+                    <h4>$1,892</h4>
+                    <p>Total Interest</p>
+                </div>
+                <select name="" id="options">
+                    <option selected value="">I want to</option>
+                    <option value="">Invest</option>
+                    <option value="">Withdrawl</option>
+                    <option value="">Add</option>
+                </select>
+            </div>
+            <div class="recentTranscation">
+                <h4>RecentTranscation</h4>
+                <div class="amount">
+                    <p>2020-08-07</p>
+                    <h5>Withdrawl Transfer to Bank-XXX11</h5>
+                    <br>
+                    <hr>
+                </div>
+                <div class="amount">
+                    <p>2020-08-21</p>
+                    <h5>Withdrawl Transfer to Bank-XXX11</h5>
+                    <br>
+                    <hr>
+                </div>
+                <div class="amount">
+                    <p>2020-07-16</p>
+                    <h5>Withdrawl Transfer to Bank-XXX11</h5>
+                    <br>
+                    <hr>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="income">
+            <div class="year">
+                <h6>Retirement Income</h6>
+                <h4>Starting Year 2056</h4>
+            </div>
+            <div class="retirement-income">
+                <div class="goal">
+                    <h3>$300,000</h3>
+                    <p>My Goal</p>
+                </div>
+                <div class="goal">
+                    <h3>59%</h3>
+                    <p>Goal Achived</p>
+                </div>
+                <div class="goal">
+                    <h3>$300</h3>
+                    <p>Est. Monthly Income</p>
+                </div>
+
+            </div>
+
+            <div class="graph">
+                <h2>Contributions Overtime</h2>
+                <div id="chart_div" style="width: 250px; height: 40%;"></div>
+            </div>
+            <div id="peers">
+                <h2>How do I compare to my peers?</h2>
+                <p>These numbers represent the current goal achievement</p>
+            </div>
+            <div class="compare">
+                <div class="category">
+                    <div class="select">
+                        <h5>Age Under :</h5>
+                        <select onchange="onChangeAge(this.value)" name="" id="age">
+                            <option id="a" selected value="30">30</option>
+                            <option value="40">40</option>
+                            <option value="50">50</option>
+                            <option value="60">60</option>
+
+                        </select>
+                    </div>
+                    <div class="select">
+                        <h5>Salary :</h5>
+                        <select onchange="onChangeSalary(this.value)" name="" id="salary">
+                            <option id="sal" selected value="25">K 20 - K 30</option>
+                            <option value="35">K 30 - K 40</option>
+                            <option value="50">K 40 - K 60</option>
+
+                        </select>
+                    </div>
+                    <div class="select">
+                        <h5>Gender :</h5>
+                        <select onchange="onChangeGender(this.value)" name="" id="gender">
+                            <option id="gen" selected value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select>
+                    </div>
+                </div>
+
+
+                <div id="pie-chart">
+
+                    <div class="container">
+                        <div class="circular-progress">
+                            <span class="progress-value">0%</span>
+                        </div>
+                        <span class="text">Averege</span>
+                    </div>
+                    <div class="container">
+                        <div class="circular-progress">
+                            <span class="progress-value">0%</span>
+                        </div>
+                        <span class="text">Top</span>
+                    </div>
+                    <div class="container">
+                        <div class="circular-progress">
+                            <span class="progress-value">0%</span>
+                        </div>
+                        <span class="text">Me</span>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="strategy">
+            <h3>Retirement Strategy</h3>
+            <div class="contribution">
+                <h6>Employee Contribution</h6>
+                <input class="emp-cont-range" type="range" value="12">
+                <span class="emp-cont">12%</span>
+            </div>
+            <div class="contribution">
+                <h6>Retiremnet Age</h6>
+                <input class="emp-cont-range" type="range" value="65">
+                <span class="emp-cont">65</span>
+            </div>
+            <hr>
+            <div class="con">
+                <p>Employee Contribution</p>
+                <p>8.4%</p>
+            </div>
+            <div class="con">
+                <p>Interest Rate</p>
+                <p>5%</p>
+            </div>
+            <button id="update">Update</button>
+            <p id="help">View help Docs ></p>
+            <div id="learn">
+                <h5>Are you considering a</h5>
+                <h4>Housing Advance?</h4>
+                <p>Limeted time reduced interest</p>
+                <h6 id="learn-more">Learn More ></h6>
+            </div>
+        </section>
+
+    </div>
+    <script src="bargraph.js"></script>
+    <script src="pieChart.js"></script>
+    <script src="resp.js"></script>
+</body>
+
+</html>
